@@ -1,42 +1,38 @@
 ///js file most action will take place here
 
+$(document).ready(function () {
+    var momdate = moment();
+    momdate = (momdate.format("MMMM Do YYYY"));
 
-var momdate = moment();
-momdate = (momdate.format("MMMM Do YYYY"));
+    var thetime = $("#currentDay");
+    thetime.text(momdate);
 
-var showtime = $("#currentday");
-
-
-var thetime = $("<p>" + momdate + "</p>");
-showtime.append(thetime);
-console.log(thetime);
-//alert(momdate);
-/// 
-var activetime = [
-    "9 AM ",
-    "10 AM",
-    "11 AM",
-    "12 PM",
-    "1 PM",
-    "2 PM",
-    "3 PM",
-    "4 PM",
-    "5 PM"
-];
-var mainDiv = $("#mainarea");
-for (var i = 0; i < activetime.length; i++) {
+    
+    var activetime = [
+        "9 AM ",
+        "10 AM",
+        "11 AM",
+        "12 PM",
+        "1 PM",
+        "2 PM",
+        "3 PM",
+        "4 PM",
+        "5 PM"
+    ];
+    var mainDiv = $("#mainarea");
+    for (var i = 0; i < activetime.length; i++) {
 
 
-    var newmainDiv = $("<div>" + activetime[i] + "</div>");
+        var newmainDiv = $("<div>" + activetime[i] + "</div>");
 
-    // It then adds this new div to main div.
-    mainDiv.append(newmainDiv);
-    mainDiv.addClass("col-md-9");
-
-
-}
+        //
+        mainDiv.append(newmainDiv);
+        mainDiv.addClass("col-md-9");
 
 
+    }
+
+});
 ///we need 3 fields side by side and the time slots run hourly from 9 am to 5 pm
 /// we need to run the entire thing though a loop that will compare the times
 /// on each row to the current time (will pull current time from moment js and will only need hour to compare since this does not break down further)
