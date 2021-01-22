@@ -7,7 +7,7 @@ $(document).ready(function () {
     var thetime = $("#currentDay");
     thetime.text(momdate);
 
-    
+
     var activetime = [
         "9 AM ",
         "10 AM",
@@ -22,15 +22,21 @@ $(document).ready(function () {
     var mainDiv = $("#mainarea");
     for (var i = 0; i < activetime.length; i++) {
 
-
         var newmainDiv = $("<div>" + activetime[i] + "</div>");
-
         //
         mainDiv.append(newmainDiv);
         mainDiv.addClass("col-md-9");
+        $("div").css("border", "2px solid black");
+
 
 
     }
+    //mainDiv.addClass("input-group mb-3");
+    //  mainDiv.addClass("input-group-prepend");
+
+
+
+    //   $("div").append("<button>");
 
 });
 ///we need 3 fields side by side and the time slots run hourly from 9 am to 5 pm
