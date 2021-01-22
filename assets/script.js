@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     var mainDiv = $("#mainarea");
     var ampm = "";
-    for (var i = 9; i < 17; i++) {
+    for (var i = 9; i < 18; i++) {
         if (i >= 12) {
             ampm = " PM";
         } else { ampm = " AM" }
