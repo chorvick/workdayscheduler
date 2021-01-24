@@ -1,15 +1,15 @@
 ///js file most action will take place here
 //// make an object called day which will store the text the user inputs 
 var day = {
-    "9 AM": "",
-    "10 AM": "",
-    "11 AM": "",
-    "12 PM": "",
-    "1 PM": "",
-    "2 PM": "",
-    "3 PM": "",
-    "4 PM": "",
-    "5 PM": "",
+    "9": "",
+    "10": "",
+    "11": "",
+    "12": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
 }
 
 
@@ -50,15 +50,63 @@ $(document).ready(function () {
 
     $("div").css("border", "2px solid black");
 
-
+    /////each button has an id to store to the day object the data when the button is clicked 
 
     $("#btn9").click(function () {
         var txt = $("#area9").val();
-        alert(txt);
+        day[9] = txt;;
     });
 
+    $("#btn10").click(function () {
+        var txt = $("#area10").val();
 
+        day[10] = txt
 
+    });
+    $("#btn11").click(function () {
+        var txt = $("#area11").val();
+
+        day[11] = txt
+
+    });
+    $("#btn12").click(function () {
+        var txt = $("#area12").val();
+
+        day[12] = txt
+
+    });
+    $("#btn1").click(function () {
+        var txt = $("#area1").val();
+
+        day[1] = txt
+
+    });
+    $("#btn2").click(function () {
+        var txt = $("#area2").val();
+
+        day[2] = txt
+
+    });
+    $("#btn3").click(function () {
+        var txt = $("#area3").val();
+
+        day[3] = txt
+
+    });
+    $("#btn4").click(function () {
+        var txt = $("#area4").val();
+
+        day[4] = txt
+
+    });
+    $("#btn5").click(function () {
+        var txt = $("#area5").val();
+
+        day[5] = txt
+
+    });
+
+    console.log(day);
 
 });
 ///we need 3 fields side by side and the time slots run hourly from 9 am to 5 pm
