@@ -23,7 +23,7 @@ $(document).ready(function () {
         }
         var newmainDiv = $("<div>" + j + ampm + "</div>");
         //
-        //  mainDiv.append(newmainDiv);
+        //mainDiv.append(newmainDiv);
         //   mainDiv.addClass("row");
         // mainDiv.addClass("col-md-9");
 
