@@ -56,58 +56,75 @@ $(document).ready(function () {
     $("#btn9").click(function () {
         var txt = $("#area9").val();
         day[9] = txt;;
+        localStorage.setItem(9, JSON.stringify(txt));
     });
 
     $("#btn10").click(function () {
         var txt = $("#area10").val();
 
         day[10] = txt
-
+        localStorage.setItem(10, JSON.stringify(txt));
     });
     $("#btn11").click(function () {
         var txt = $("#area11").val();
 
         day[11] = txt
-
+        localStorage.setItem(11, JSON.stringify(txt));
     });
     $("#btn12").click(function () {
         var txt = $("#area12").val();
 
         day[12] = txt
-
+        localStorage.setItem(12, JSON.stringify(txt));
     });
     $("#btn1").click(function () {
         var txt = $("#area1").val();
 
         day[1] = txt
-
+        localStorage.setItem(1, JSON.stringify(txt));
     });
     $("#btn2").click(function () {
         var txt = $("#area2").val();
 
         day[2] = txt
-
+        localStorage.setItem(2, JSON.stringify(txt));
     });
     $("#btn3").click(function () {
         var txt = $("#area3").val();
 
         day[3] = txt
-
+        localStorage.setItem(3, JSON.stringify(txt));
     });
     $("#btn4").click(function () {
         var txt = $("#area4").val();
 
         day[4] = txt
-
+        localStorage.setItem(4, JSON.stringify(txt));
     });
     $("#btn5").click(function () {
         var txt = $("#area5").val();
 
         day[5] = txt
-
+        localStorage.setItem(5, JSON.stringify(txt));
     });
 
     console.log(day);
+    ///write function to take the data and save it
+    ///into local storage
+
+
+    console.log(localStorage)
+
+
+
+
+
+
+
+
+
+
+
 
 });
 ///we need 3 fields side by side and the time slots run hourly from 9 am to 5 pm
