@@ -132,8 +132,20 @@ $(document).ready(function () {
     //     $("area9").css("background-color", "red");
     // }
 
+    for (i = 9; i < 18; i++) {
+        var timeCheck = "#area" + i
+        console.log(timeCheck)
 
+        $(timeCheck).css("background-color", "grey")
+    }
 
+    for (i = 9; i < 18; i++) {
+        var timeCheck = "#area" + i
+        console.log(timeCheck)
+        if (i > presentHour) {
+            $(timeCheck).css("background-color", "green")
+        }
+    }
     if (presentHour === 9) {
         $("#area9").css("background-color", "red");
     }
@@ -169,16 +181,6 @@ $(document).ready(function () {
     if (presentHour === 17) {
         $("#area17").css("background-color", "red");
     }
-
-    for (i = 9; i < 18; i++) {
-        var timeCheck = "#area" + i
-        console.log(timeCheck)
-
-        $(timeCheck).css("background-color", "grey")
-    }
-
-
-
 
 
 
