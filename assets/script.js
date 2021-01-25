@@ -124,23 +124,51 @@ $(document).ready(function () {
     var stillUtc = moment.utc(date).toDate();
     var local = moment(stillUtc).local().format('YYYY-MM-DD HH:mm:ss');
 
-    alert(local);
+    //   alert(local);
+
+    var presentHour = moment().hour();
+    ///alert(presentHour);
+    // if (presentHour = 23 {
+    //     $("area9").css("background-color", "red");
+    // }
+    ////for (i = 9; i < 18; i++)
 
 
+    if (presentHour === 9) {
+        $("#area9").css("background-color", "red");
+    }
 
+    if (presentHour === 10) {
+        $("#area10").css("background-color", "red");
+    }
 
+    if (presentHour === 11) {
+        $("#area11").css("background-color", "red");
+    }
 
+    if (presentHour === 12) {
+        $("#area12").css("background-color", "red");
+    }
 
+    if (presentHour === 13) {
+        $("#area1").css("background-color", "red");
+    }
 
+    if (presentHour === 14) {
+        $("#area2").css("background-color", "red");
+    }
 
+    if (presentHour === 15) {
+        $("#area3").css("background-color", "red");
+    }
 
+    if (presentHour === 16) {
+        $("#area4").css("background-color", "red");
+    }
 
-
-
-
-
-
-
+    if (presentHour === 17) {
+        $("#area5").css("background-color", "red");
+    }
 
 
 });
