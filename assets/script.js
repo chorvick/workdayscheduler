@@ -12,10 +12,7 @@ var day = {
     "4": "",
     "5": "",
 }
-
-
-
-
+/// the document ready function make sure the page is loaded first -- all code wrapped inside it
 $(document).ready(function () {
     var momdate = moment();
     momdate = (momdate.format("MMMM Do YYYY"));
@@ -23,7 +20,7 @@ $(document).ready(function () {
     var thetime = $("#currentDay");
     thetime.text(momdate);
 
-    /// used j querry to put a black border around everything for now to be able to easly 
+    /// used j querry to put a black border around everything to be able to easly 
     /// see each section
 
     $("div").css("border", "2px solid black");
@@ -84,8 +81,6 @@ $(document).ready(function () {
         day[5] = txt
         localStorage.setItem(5, JSON.stringify(txt));
     });
-
-
     //   each time page is refreshed the information the user typed 
     // in each time slot is pulled from local storage and replaced for them 
 
@@ -117,20 +112,16 @@ $(document).ready(function () {
     $('#area17').val(storedData);
 
     /// setting up moment to convert utc time to local time 
-    /// puts local time to the second to alert box for now
-
-
+    /// puts local time to the second - we use present 
+    ///hour to capture the current hour since backgrounds change on the hour 
     var date = moment.utc().format('YYYY-MM-DD HH:mm:ss');
     var stillUtc = moment.utc(date).toDate();
     var local = moment(stillUtc).local().format('YYYY-MM-DD HH:mm:ss');
-
-    //   alert(local);
-
     var presentHour = moment().hour();
-    //alert(presentHour);
-    // if (presentHour = 23 {
-    //     $("area9").css("background-color", "red");
-    // }
+
+    // presentHour = 12; /// note this line used for testing setting various times
+
+    //// if it is a past hour we want a grey background 
 
     for (i = 9; i < 18; i++) {
         var timeCheck = "#area" + i
@@ -138,7 +129,7 @@ $(document).ready(function () {
 
         $(timeCheck).css("background-color", "grey")
     }
-
+    //// if it is a future  hour we want a green background 
     for (i = 9; i < 18; i++) {
         var timeCheck = "#area" + i
         console.log(timeCheck)
@@ -146,6 +137,9 @@ $(document).ready(function () {
             $(timeCheck).css("background-color", "green")
         }
     }
+
+    ///if it is the current hour - we want a red background 
+
     if (presentHour === 9) {
         $("#area9").css("background-color", "red");
     }
@@ -192,13 +186,7 @@ $(document).ready(function () {
 
 
 
-/// events in the past are grey --
 
-///the current hour needs to be red and future hours green
-/// i will use conditional statements to change the css 
-
-/// for saving the information we need to be able to write what is in the middle column 
-/// to local storage using JSON when someone clicks a button in the right most column
 
 
 

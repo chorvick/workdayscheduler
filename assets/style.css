@@ -1,3 +1,11 @@
+/*/  very few changes were made to the starting css file provided 
+i did tweak the text area -- i also changed the save button icon
+and added the styling in the index html so .saveBtn was commented out
+I left it as such in case i need to revert changes 
+all updates to css for user functionality are done dynamically using 
+jquerry in the script.js file
+/*/
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
