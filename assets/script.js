@@ -55,31 +55,31 @@ $(document).ready(function () {
         localStorage.setItem(12, JSON.stringify(txt));
     });
     $("#btn1").click(function () {
-        var txt = $("#area1").val();
+        var txt = $("#area13").val();
 
         day[1] = txt
         localStorage.setItem(1, JSON.stringify(txt));
     });
     $("#btn2").click(function () {
-        var txt = $("#area2").val();
+        var txt = $("#area14").val();
 
         day[2] = txt
         localStorage.setItem(2, JSON.stringify(txt));
     });
     $("#btn3").click(function () {
-        var txt = $("#area3").val();
+        var txt = $("#area15").val();
 
         day[3] = txt
         localStorage.setItem(3, JSON.stringify(txt));
     });
     $("#btn4").click(function () {
-        var txt = $("#area4").val();
+        var txt = $("#area16").val();
 
         day[4] = txt
         localStorage.setItem(4, JSON.stringify(txt));
     });
     $("#btn5").click(function () {
-        var txt = $("#area5").val();
+        var txt = $("#area17").val();
 
         day[5] = txt
         localStorage.setItem(5, JSON.stringify(txt));
@@ -102,19 +102,19 @@ $(document).ready(function () {
     $('#area12').val(storedData);
 
     var storedData = JSON.parse(window.localStorage.getItem(1))
-    $('#area1').val(storedData);
+    $('#area13').val(storedData);
 
     var storedData = JSON.parse(window.localStorage.getItem(2))
-    $('#area2').val(storedData);
+    $('#area14').val(storedData);
 
     var storedData = JSON.parse(window.localStorage.getItem(3))
-    $('#area3').val(storedData);
+    $('#area15').val(storedData);
 
     var storedData = JSON.parse(window.localStorage.getItem(4))
-    $('#area4').val(storedData);
+    $('#area16').val(storedData);
 
     var storedData = JSON.parse(window.localStorage.getItem(5))
-    $('#area5').val(storedData);
+    $('#area17').val(storedData);
 
     /// setting up moment to convert utc time to local time 
     /// puts local time to the second to alert box for now
@@ -127,11 +127,11 @@ $(document).ready(function () {
     //   alert(local);
 
     var presentHour = moment().hour();
-    ///alert(presentHour);
+    //alert(presentHour);
     // if (presentHour = 23 {
     //     $("area9").css("background-color", "red");
     // }
-    ////for (i = 9; i < 18; i++)
+
 
 
     if (presentHour === 9) {
@@ -151,27 +151,41 @@ $(document).ready(function () {
     }
 
     if (presentHour === 13) {
-        $("#area1").css("background-color", "red");
+        $("#area13").css("background-color", "red");
     }
 
     if (presentHour === 14) {
-        $("#area2").css("background-color", "red");
+        $("#area14").css("background-color", "red");
     }
 
     if (presentHour === 15) {
-        $("#area3").css("background-color", "red");
+        $("#area15").css("background-color", "red");
     }
 
     if (presentHour === 16) {
-        $("#area4").css("background-color", "red");
+        $("#area16").css("background-color", "red");
     }
 
     if (presentHour === 17) {
-        $("#area5").css("background-color", "red");
+        $("#area17").css("background-color", "red");
+    }
+
+    for (i = 9; i < 18; i++) {
+        var timeCheck = "#area" + i
+        console.log(timeCheck)
+
+        $(timeCheck).css("background-color", "grey")
     }
 
 
+
+
+
+
 });
+
+
+
 
 
 
