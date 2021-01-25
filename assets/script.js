@@ -108,12 +108,22 @@ $(document).ready(function () {
         localStorage.setItem(5, JSON.stringify(txt));
     });
 
-    console.log(day);
-    ///write function to take the data and save it
+
+    //   should keep 9 am on the page when refreshed and working
+
+    var storedData = JSON.parse(window.localStorage.getItem(9))
+    $('#area9').val(storedData);
+
+
+    ///write function to write the data from local
+    ///storage back in to calendar
+    ////--- everything saved should have been
+    ///put in a function really instead of doing each 
+    ///separate on its own line
     ///into local storage
 
 
-    console.log(localStorage)
+
 
 
 
