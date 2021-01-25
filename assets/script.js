@@ -109,10 +109,35 @@ $(document).ready(function () {
     });
 
 
-    //   should keep 9 am on the page when refreshed and working
+    //   
 
     var storedData = JSON.parse(window.localStorage.getItem(9))
     $('#area9').val(storedData);
+
+    var storedData = JSON.parse(window.localStorage.getItem(10))
+    $('#area10').val(storedData);
+
+    var storedData = JSON.parse(window.localStorage.getItem(11))
+    $('#area11').val(storedData);
+
+    var storedData = JSON.parse(window.localStorage.getItem(12))
+    $('#area12').val(storedData);
+
+    var storedData = JSON.parse(window.localStorage.getItem(1))
+    $('#area1').val(storedData);
+
+    var storedData = JSON.parse(window.localStorage.getItem(2))
+    $('#area2').val(storedData);
+
+    var storedData = JSON.parse(window.localStorage.getItem(3))
+    $('#area3').val(storedData);
+
+    var storedData = JSON.parse(window.localStorage.getItem(4))
+    $('#area4').val(storedData);
+
+    var storedData = JSON.parse(window.localStorage.getItem(5))
+    $('#area5').val(storedData);
+
 
 
     ///write function to write the data from local
