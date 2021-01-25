@@ -1,5 +1,6 @@
 ///js file most action will take place here
 //// make an object called day which will store the text the user inputs 
+
 var day = {
     "9": "",
     "10": "",

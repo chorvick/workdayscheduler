@@ -58,6 +58,9 @@ textarea {
   color: white;
 }
 
+/*/  commented out default css that we started with for the button for now
+since i put font awesome buttons for save buttons   
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -67,7 +70,7 @@ textarea {
   height: 100%;
   width: 75%;
 }
-
+/*/
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
