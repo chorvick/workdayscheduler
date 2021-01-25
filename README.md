@@ -5,9 +5,12 @@ This assignment was to create a simple calendar application that allows a user t
 
 I used [Moment.js](https://momentjs.com/) to work with dates and times. 
 Below we have a link to the application, a screenshot, and the acceptance criteria.
+
+[Workday Scheduler -- Click to launch](https://chorvick.github.io/workdayscheduler/)
+
 ![workdaysample](https://user-images.githubusercontent.com/52890172/105667117-bdfe2c00-5ea8-11eb-8bbe-ae6ea3f1c536.png)
 
-[Workday Scheduler](https://chorvick.github.io/workdayscheduler/)
+ 
 
 
 
