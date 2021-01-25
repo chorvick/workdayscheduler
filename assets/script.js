@@ -23,29 +23,6 @@ $(document).ready(function () {
     var thetime = $("#currentDay");
     thetime.text(momdate);
 
-
-    //// this code will probably not be used now that we have made the 
-    /// template in the index file --- commented out for now but will
-    /// likely not use  still may be helpful later 
-    // var mainDiv = $("#mainarea");
-    // var ampm = "";
-    // for (var i = 9; i < 18; i++) {
-    //     if (i >= 12) {
-    //         ampm = " PM";
-    //     } else { ampm = " AM" }
-
-
-    //     var j = i;
-    //     if (i > 12) {
-    //         j = i - 12
-    //     }
-    //     var newmainDiv = $("<div>" + j + ampm + "</div>");
-    //
-    //mainDiv.append(newmainDiv);
-    //   mainDiv.addClass("row");
-    // mainDiv.addClass("col-md-9");
-
-
     /// used j querry to put a black border around everything for now to be able to easly 
     /// see each section
 
@@ -109,7 +86,8 @@ $(document).ready(function () {
     });
 
 
-    //   
+    //   each time page is refreshed the information the user typed 
+    // in each time slot is pulled from local storage and replaced for them 
 
     var storedData = JSON.parse(window.localStorage.getItem(9))
     $('#area9').val(storedData);
@@ -138,14 +116,18 @@ $(document).ready(function () {
     var storedData = JSON.parse(window.localStorage.getItem(5))
     $('#area5').val(storedData);
 
+    /// setting up moment to convert utc time to local time 
+    /// puts local time to the second to alert box for now
 
 
-    ///write function to write the data from local
-    ///storage back in to calendar
-    ////--- everything saved should have been
-    ///put in a function really instead of doing each 
-    ///separate on its own line
-    ///into local storage
+    var date = moment.utc().format('YYYY-MM-DD HH:mm:ss');
+    var stillUtc = moment.utc(date).toDate();
+    var local = moment(stillUtc).local().format('YYYY-MM-DD HH:mm:ss');
+
+    alert(local);
+
+
+
 
 
 
@@ -162,9 +144,7 @@ $(document).ready(function () {
 
 
 });
-///we need 3 fields side by side and the time slots run hourly from 9 am to 5 pm
-/// we need to run the entire thing though a loop that will compare the times
-/// on each row to the current time (will pull current time from moment js and will only need hour to compare since this does not break down further)
+
 
 
 
@@ -177,18 +157,6 @@ $(document).ready(function () {
 /// to local storage using JSON when someone clicks a button in the right most column
 
 
-// not sure how we will treat multiple entries yet (maybe add on to what is there since
-/// if the page is reloaded the information is supossed to stay )
-//
 
 
-// i am forced to use bootstrap by the assignment template--
-// on advice from instuctor decided to use html to make the form in index file
-/// then use jquerry to get storage working and worry about the
-///changing of colors last
-///  
-// so will scrap code where the template is made here , 
-// was much easier to make in the index file...
-// 
-///
-///
+
