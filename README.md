@@ -4,14 +4,14 @@
 This assignment was to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
 I used [Moment.js](https://momentjs.com/) to work with dates and times. 
+Below we have a link to the application, a screenshot, and the acceptance criteria.
+![workdaysample](https://user-images.githubusercontent.com/52890172/105667117-bdfe2c00-5ea8-11eb-8bbe-ae6ea3f1c536.png)
 
-## User Story
+[Workday Scheduler](https://chorvick.github.io/workdayscheduler/)
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+
+
+
 
 ## Acceptance Criteria
 
