@@ -1,35 +1,49 @@
-
-# Workday Scheduler 
-
-This assignment was to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-I used [Moment.js](https://momentjs.com/) to work with dates and times. 
-Below we have a link to the application, a screenshot, and the acceptance criteria.
+# Workday Scheduler
 
 [Workday Scheduler -- Click to launch](https://chorvick.github.io/workdayscheduler/)
 
-![workdaysample](https://user-images.githubusercontent.com/52890172/105667117-bdfe2c00-5ea8-11eb-8bbe-ae6ea3f1c536.png)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- 
+## Description
 
+This is a simple calendar application that allows a user to save events for each hour of the day by modifying starter code.
 
+## Table of Contents
 
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Contribution](#contribution)
+[Tests](#tests)
+[Questions](#questions)
 
+## Installation
 
-## Acceptance Criteria
+See deployed link
 
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+## Usage
+
+A Daily planner to keep track of important events. Technologies used incude node.js, javascript, moment.js, jQuery, html and css.
+
+## License
+
+This application is covered under the MIT License.
+
+## Contribution
+
+Please open an issue or pull request on github.
+
+## Tests
+
+n/a
+
+## Questions
+
+Contact me directly.
+
+### Contact Information
+
+Please address inquiries to me on Github: [chorvick](https://github.com/chorvick)
+
+Reach me by e mail at: chorvickprocode@gmail.com
